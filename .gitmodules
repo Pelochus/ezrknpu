@@ -1,0 +1,6 @@
+[submodule "ezrknn-llm"]
+	path = ezrknn-llm
+	url = https://github.com/Pelochus/ezrknn-llm
+[submodule "ezrknn-toolkit2"]
+	path = ezrknn-toolkit2
+	url = https://github.com/Pelochus/ezrknn-toolkit2
