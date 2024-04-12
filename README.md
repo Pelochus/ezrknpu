@@ -16,10 +16,27 @@ Keep in mind this repo is focused for:
 - You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too.
 
 ## Quick Install
-TODO SCRIPT
+This will install required dependencies, packages, libraries and install both RKNN Toolkit 2 and RKNN LLM.
+
+Run: 
+```bash
+curl https://raw.githubusercontent.com/Pelochus/ezrknpu/main/install.sh | sudo bash
+```
 
 ## Running
 Depending on what you want to run, please refer to these links:
+
+### Test Run
+Currently, the lightest (works on 4GB of RAM) and best working model is Qwen 1.8B Chat. To run it:
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/Pelochus/qwen-1_8B-rk3588 # Running git lfs pull after is usually better
+cd qwen-1_8B-rk3588 && git lfs pull # Pull model
+rkllm qwen-chat-1_8B.rkllm # Run!
+```
+
+Wait for about a minute before the model loads.
+If something fails, perhaps it is a good idea keep reading below.
 
 ### Downloading and running a LLM on your NPU
 For downloading:
@@ -28,20 +45,20 @@ For downloading:
 For running an already downloaded model:
 - https://github.com/Pelochus/ezrknn-llm?tab=readme-ov-file#test
 
-Converting a compatible model to RKLLM format (check previously Rockchip's docs on rknn-llm repo):
+Converting a compatible model to RKLLM format (check previously Rockchip's docs on rknn-llm repo). This needs a x86 PC:
 - https://github.com/Pelochus/ezrknn-llm?tab=readme-ov-file#converting-llms-for-rockchips-npus
 
 ### Running and using the RKNN-Toolkit for NN applications
 https://github.com/Pelochus/ezrknn-toolkit2/?tab=readme-ov-file#test
 
-## How to know NPU usage
+## Checking NPU usage
 You have 3 options:
-- rknputop with a graphical option: https://github.com/ramonbroox/rknputop
+- rknputop (graphical option, works on OSes without GUI): https://github.com/ramonbroox/rknputop
 - Running `ntop.sh`, from this repo which runs the command from next point every 0.5 s
 - Running `sudo cat /sys/kernel/debug/rknpu/load`
 
 ## Contributing
-Please open an issue or PR on the corresponding submodule repo:
+Please open an issue or PR on the corresponding submodule repo. If unsure, open it on this repo:
 - For RKLLM related: https://github.com/Pelochus/ezrknn-llm
 - For RKNN related: https://github.com/Pelochus/ezrknn-toolkit2
 
