@@ -34,6 +34,12 @@ Converting a compatible model to RKLLM format (check previously Rockchip's docs 
 ### Running and using the RKNN-Toolkit for NN applications
 https://github.com/Pelochus/ezrknn-toolkit2/?tab=readme-ov-file#test
 
+## How to know NPU usage
+You have 3 options:
+- rknputop with a graphical option: https://github.com/ramonbroox/rknputop
+- Running `ntop.sh`, from this repo which runs the command from next point every 0.5 s
+- Running `sudo cat /sys/kernel/debug/rknpu/load`
+
 ## Contributing
 Please open an issue or PR on the corresponding submodule repo:
 - For RKLLM related: https://github.com/Pelochus/ezrknn-llm
