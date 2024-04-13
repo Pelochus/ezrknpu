@@ -25,6 +25,9 @@ message_print "Cloning main repo with submodules..."
 git clone --recurse-submodules https://github.com/Pelochus/ezrknpu
 cd ezrknpu
 
+message_print "Updating submodules..."
+git submodule update --recursive --remote # Submodules should be updated, but just in case I forget
+
 # TODO: Add here option to skip installing LLM and/or RKNN?
 message_print "Installing RKNN LLM with install.sh script..."
 cd ezrknn-llm
