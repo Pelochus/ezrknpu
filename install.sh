@@ -31,7 +31,7 @@ cd ezrknn-llm
 bash install.sh
 
 message_print "Installing RKNN Toolkit 2 with install.sh script..."
-cd ezrknn-toolkit2
+cd ../ezrknn-toolkit2
 bash install.sh
 
 message_print "Everything done!"
