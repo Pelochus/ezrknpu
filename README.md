@@ -1,5 +1,5 @@
 # ezrknpu
-Easy usage of Rockchip's NPU found in RK3588 and similar chips. This includes ChatGPT-like LLMs and Neural Networks programs like YoloV5. 
+Easy usage of Rockchip's NPU found in RK3588 and similar chips. This includes ChatGPT-like LLMs and models like YoloV5. 
 This repo is divided in two submodules:
 - https://github.com/Pelochus/ezrknn-llm
 - https://github.com/Pelochus/ezrknn-toolkit2
