@@ -15,7 +15,7 @@ message_print() {
 message_print "Installing apt dependencies..."
 
 sudo apt update
-sudo apt install -y git git-lfs python-is-python3 python3-pip python3-dev build-essential cmake libxslt1-dev zlib1g-dev libglib2.0-dev libsm6 libgl1-mesa-glx libprotobuf-dev
+sudo apt install -y git git-lfs python-is-python3 python3-pip python3-dev build-essential cmake libxslt1-dev zlib1g-dev libglib2.0-dev libsm6 libgl1-mesa-glx libprotobuf-dev libhdf5-dev
 # sudo apt install -y adb # For running the NPU in Android
 
 message_print "Cloning main repo with submodules..."
