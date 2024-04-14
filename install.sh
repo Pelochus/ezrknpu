@@ -1,7 +1,7 @@
 #!/bin/bash
 # Title: ntop.sh
 # Author: Pelochus
-# Brief: A very basic 'top' style program that shows the status of the NPU in Rockchip's SoCs 
+# Brief: Basic installation script for Rockchip NPUs, including LLMs and RKNN Toolkit 2
 # Check for more info: https://github.com/Pelochus/ezrknpu/
 
 message_print() {
