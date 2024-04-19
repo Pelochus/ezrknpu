@@ -13,6 +13,7 @@ Currently focusing only on RK3588 and RK3588S.
 Keep in mind this repo is focused for:
 - Installing what's needed for Linux and running on the SBC directly.
 - Rockchip RK3588, but I accept contributions for running on other compatible Rockchip SoCs.
+- Using NPU driver 0.9.6 or higher (for basically any LLM except the smallest like Qwen 1.8). Check it with `dmesg | grep -i rknpu`
 - You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too.
 
 ## Quick Install
@@ -57,6 +58,11 @@ You have 3 options:
 - Running `ntop.sh`, from this repo which runs the command from next point every 0.5 s
 - Running `sudo cat /sys/kernel/debug/rknpu/load`
 
+## Useful Links
+- Dedicated subreddit. I **strongly recommend** taking a look at the wiki and various posts there: https://www.reddit.com/r/RockchipNPU/
+- LLM submodule for this repo: https://github.com/Pelochus/ezrknn-llm
+- NN submodule for this repo: https://github.com/Pelochus/ezrknn-toolkit2
+
 ## Contributing
 Please open an issue or PR on the corresponding submodule repo. If unsure, open it on this repo:
 - For RKLLM related: https://github.com/Pelochus/ezrknn-llm
@@ -65,11 +71,9 @@ Please open an issue or PR on the corresponding submodule repo. If unsure, open 
 Currently (and mainly) there are the following contributions to be made:
 - [ ] Other Rockchip SoCs support. Check their documentation to see which are capable.
 - [ ] Android support
-- [ ] Conversion of other compatible LLMs (Llama 2 mainly, since I'm low on RAM)
+- [x] Conversion of other compatible LLMs (only some variations of Qwen 1.5 left, not doing it for now)
 - [ ] Improve documentation
 - [ ] Other general improvements to installation scripts, Docker containers, support for other Linux distros like Arch, submitting issues, adding more error checking...
 
-## Useful Links
-- Dedicated subreddit. I **strongly recommend** taking a look at the wiki and various posts there: https://www.reddit.com/r/RockchipNPU/
-- LLM submodule for this repo: https://github.com/Pelochus/ezrknn-llm
-- NN submodule for this repo: https://github.com/Pelochus/ezrknn-toolkit2
+## Credits
+To the r/RockchipNPU subreddit, which helped me tremendously with testing and discovering why things failed and how to solve those issues.
