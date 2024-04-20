@@ -41,6 +41,11 @@ Run:
 curl https://raw.githubusercontent.com/Pelochus/ezrknpu/main/install.sh | sudo bash
 ```
 
+## Custom install
+You can download the `install.sh` script in this repo and run it with:
+- `-llm`: for installing only RKNN LLM
+- `-toolkit`: for installing only RKNN Toolkit 2
+
 ## Running
 Depending on what you want to run, please refer to these links:
 
@@ -69,11 +74,28 @@ Converting a compatible model to RKLLM format (check previously Rockchip's docs 
 ### Running and using the RKNN-Toolkit for NN applications
 https://github.com/Pelochus/ezrknn-toolkit2/?tab=readme-ov-file#test
 
-## Checking NPU usage
-You have 3 options:
+<hr>
+
+## Checking NPU info
+### NPU usage
+You have 3 options for checking usage:
 - rknputop (graphical option, works on OSes without GUI): https://github.com/ramonbroox/rknputop
 - Running `ntop.sh`, from this repo which runs the command from next point every 0.5 s
 - Running `sudo cat /sys/kernel/debug/rknpu/load`
+
+### NPU driver
+Run `dmesg | grep -i rknpu` and it should output something like:
+
+```bash
+[    7.648610] RKNPU fdab0000.npu: Adding to iommu group 0
+[    7.648747] RKNPU fdab0000.npu: RKNPU: rknpu iommu is enabled, using iommu mode
+[    7.648893] RKNPU fdab0000.npu: Looking up rknpu-supply from device tree
+[    7.650056] RKNPU fdab0000.npu: Looking up mem-supply from device tree
+[    7.652808] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdab0000-0xfdabffff]
+[    7.652838] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdac0000-0xfdacffff]
+[    7.652859] RKNPU fdab0000.npu: can't request region for resource [mem 0xfdad0000-0xfdadffff]
+[    7.653197] [drm] Initialized rknpu 0.9.5 20240226 for fdab0000.npu on minor 1
+```
 
 ## Useful Links
 - Dedicated subreddit. I **strongly recommend** taking a look at the wiki and various posts there: https://www.reddit.com/r/RockchipNPU/
