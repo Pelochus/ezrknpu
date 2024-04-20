@@ -14,7 +14,7 @@ Keep in mind this repo is focused for:
 - Installing what's needed for Linux and running on the SBC directly.
 - Rockchip RK3588, but I accept contributions for running on other compatible Rockchip SoCs.
 - Using NPU driver 0.9.6 or higher (for basically any LLM except the smallest like Qwen 1.8). Check it with `dmesg | grep -i rknpu`
-- You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too.
+- You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too. I personally **recommend either Armbian or Ubuntu Rockchip**
 
 ## Quick Install
 This will install required dependencies, packages, libraries and install both RKNN Toolkit 2 and RKNN LLM.
