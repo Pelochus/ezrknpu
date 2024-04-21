@@ -16,6 +16,13 @@ Keep in mind this repo is focused for:
 - Using NPU driver 0.9.6 or higher (for basically any LLM except the smallest like Qwen 1.8). Check it with `dmesg | grep -i rknpu`
 - You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too. I personally **recommend either Armbian or Ubuntu Rockchip**
 
+## Recommended OS
+Use this OS for now:
+https://github.com/Pelochus/armbian-build-rknpu-0.9.6
+
+This is a modified Armbian by me with the NPU driver 0.9.6. 
+I've made a PR (already approved) to the Armbian guys to include the driver 0.9.6, in future releases with kernel 6.1, Rockchip devices will already have this driver included from the official Armbian guys. 
+
 ## Quick Install
 This will install required dependencies, packages, libraries and install both RKNN Toolkit 2 and RKNN LLM.
 
