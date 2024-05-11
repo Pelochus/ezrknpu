@@ -105,9 +105,9 @@ Please open an issue or PR on the corresponding submodule repo. If unsure, open 
 Currently (and mainly) there are the following contributions to be made:
 - [ ] Other Rockchip SoCs support. Check their documentation to see which are capable.
 - [ ] Android support
-- [x] Conversion of other compatible LLMs (only some variations of Qwen 1.5 left, not doing it for now)
+- [x] Conversion of other compatible LLMs
 - [ ] Improve documentation
-- [ ] Other general improvements to installation scripts, Docker containers, support for other Linux distros like Arch, submitting issues, adding more error checking...
+- [ x] Other general improvements to installation scripts, Docker containers, support for other Linux distros like Arch, submitting issues, adding more error checking...
 
 ## Credits
 To the r/RockchipNPU subreddit, which helped me tremendously with testing and discovering why things failed and how to solve those issues.
