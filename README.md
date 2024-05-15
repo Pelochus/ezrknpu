@@ -10,7 +10,8 @@ Apart from that, you can find converted LLMs (and how to download them) here:
 Currently focusing only on RK3588 and RK3588S.
 
 ## Demo Videos
-Check out these links to see some LLMs in action: 
+Check out these links to see some LLMs in action:
+- Tutorial for Llama 2 7B on the NPU: https://www.youtube.com/watch?v=KB9qRwj1pnU
 - Llama 2 7B on the NPU: https://www.reddit.com/r/RockchipNPU/comments/1ci7p72/rk3588_running_llama2_7b/
 - Qwen 1.8B on the NPU: https://www.reddit.com/r/RockchipNPU/comments/1c0x7c2/first_llm_running_on_rk3588_npu/
 
