@@ -108,7 +108,7 @@ Currently (and mainly) there are the following contributions to be made:
 - [ ] Android support
 - [x] Conversion of other compatible LLMs
 - [ ] Improve documentation
-- [ x] Other general improvements to installation scripts, Docker containers, support for other Linux distros like Arch, submitting issues, adding more error checking...
+- [x] Other general improvements to installation scripts, Docker containers, support for other Linux distros like Arch, submitting issues, adding more error checking...
 
 ## Credits
 To the r/RockchipNPU subreddit, which helped me tremendously with testing and discovering why things failed and how to solve those issues.
