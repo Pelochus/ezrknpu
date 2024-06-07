@@ -23,11 +23,11 @@ Keep in mind this repo is focused for:
 - You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too. I personally **recommend either Armbian or Ubuntu Rockchip**
 
 ## Recommended OS
-Use this OS for now:
-https://github.com/Pelochus/armbian-build-rknpu-0.9.6
-
-This is a modified Armbian by me with the NPU driver 0.9.6. 
-I've made a PR (already approved) to the Armbian guys to include the driver 0.9.6, in future releases with kernel 6.1, Rockchip devices will already have this driver included from the official Armbian guys. 
+I recommend using either 
+[Armbian](https://www.armbian.com/) (May 2024 builds or later)
+or 
+[Ubuntu Rockchip by Joshua Riek](https://github.com/Joshua-Riek/ubuntu-rockchip/releases/latest). 
+Anything that has the NPU driver 0.9.6 or later (usually May 2024 onwards):
 
 ## Quick Install
 This will install required dependencies, packages, libraries and install both RKNN Toolkit 2 and RKNN LLM.
