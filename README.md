@@ -15,6 +15,13 @@ Check out these links to see some LLMs in action:
 - Llama 2 7B on the NPU: https://www.reddit.com/r/RockchipNPU/comments/1ci7p72/rk3588_running_llama2_7b/
 - Qwen 1.8B on the NPU: https://www.reddit.com/r/RockchipNPU/comments/1c0x7c2/first_llm_running_on_rk3588_npu/
 
+## Tutorial from scratch
+You can check this XDA article on how to use this from scratch to run LLMs on an Orange Pi 5 Pro:
+
+https://www.xda-developers.com/how-i-used-the-npu-on-my-orange-pi-5-pro-to-run-llms/
+
+This tutorial aims to run Phi-3 mini on the NPU of an OPi 5 Pro 16GB RAM
+
 ## Requirements
 Keep in mind this repo is focused for:
 - Installing what's needed for Linux and running on the SBC directly.
@@ -22,7 +29,7 @@ Keep in mind this repo is focused for:
 - Using NPU driver 0.9.6 or higher (for basically any LLM except the smallest like Qwen 1.8). Check it with `dmesg | grep -i rknpu`
 - You are running either Debian 11 or Ubuntu 22.04 or later versions. Derivatives should possibly work fine too. I personally **recommend either Armbian or Ubuntu Rockchip**
 
-## Recommended OS
+### Recommended OS
 I recommend using either 
 [Armbian](https://www.armbian.com/) (May 2024 builds or later)
 or 
