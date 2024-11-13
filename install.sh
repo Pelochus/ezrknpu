@@ -35,7 +35,17 @@ fi
 message_print "Installing apt dependencies..."
 
 sudo apt update
-sudo apt install -y git git-lfs python-is-python3 python3-pip python3-dev build-essential cmake libxslt1-dev zlib1g-dev libglib2.0-dev libsm6 libgl1-mesa-glx libprotobuf-dev libhdf5-dev
+
+sudo apt install -y git git-lfs python-is-python3 python3-pip python3-dev build-essential cmake libxslt1-dev zlib1g-dev libglib2.0-dev libsm6 libprotobuf-dev libhdf5-dev
+
+OS_VERSION=$(grep 'VERSION_ID' /etc/os-release | awk -F '=' '{print $2}' | tr -d '"')
+if $(dpkg --compare-versions "${OS_VERSION}" "ge" "24.10")
+then
+    sudo apt install -y libgl1 libglx-mesa0
+else
+    sudo apt install -y libgl1-mesa-glx
+fi
+
 # sudo apt install -y adb # For running the NPU in Android
 
 message_print "Cloning main repo with submodules..."
