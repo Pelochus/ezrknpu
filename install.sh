@@ -1,5 +1,5 @@
 #!/bin/bash
-# Title: ntop.sh
+# Title: install.sh
 # Author: Pelochus
 # Brief: Basic installation script for Rockchip NPUs, including LLMs and RKNN Toolkit 2
 # Check for more info: https://github.com/Pelochus/ezrknpu/
