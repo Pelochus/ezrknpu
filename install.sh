@@ -62,7 +62,7 @@ fi
 
 message_print "Installing apt dependencies..."
 
-if dpkg --compare-versions "$OS_VERSION" "ge" "24.10"
+if [ "$(echo "$OS_VERSION 23.10" | awk '{if ($1 > $2) print 1; else print 0;}')" -eq 1 ];
 then
     ALL_DEPS=("${APT_DEPS[@]}" "${APT_DEPS_NEW[@]}")
 else
