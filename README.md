@@ -75,7 +75,8 @@ rkllm DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm 1024 1024 # Run!
 # It will use more RAM though, but responses can be longer
 ```
 
-Wait before the model loads. Keep in mind this is a reasoning model. It also DOES NOT have memory between messages (can be changed on `llm_demo.cpp` and recompiled if you desire)
+Wait before the model loads. Keep in mind this is a reasoning model. It also DOES NOT have memory between messages (can be changed on `llm_demo.cpp` and recompiled if you desire).
+**New!:** Now at the end of each response, info regarding tokens, time and token/s is shown.
 
 ### Running and using the RKNN-Toolkit for NN applications
 https://github.com/Pelochus/ezrknn-toolkit2/?tab=readme-ov-file#test
